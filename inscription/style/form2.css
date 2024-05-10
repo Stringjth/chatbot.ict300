@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ddebf8;
+}
+hr{
+    color: hwb(0 56% 43%);
+}
+
+.sidebar{
+    height: 100%;
+    width: 81px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 6px 14px;
+    background: #ffffff;
+    transition: all 0.5s ease;
+    box-shadow: 3px 3px 3px rgb(185, 184, 184);
+}
+.principal.active .sidebar{
+    width: 238px;
+}
+.logo i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar .logo{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.principal.active .sidebar.logo{
+    opacity: inherit;
+    pointer-events: none;
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin: 0 5px;
+    line-height: 50px;
+}
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+    color: rgb(62, 12, 109);
+}
+.sidebar ul li a :hover{
+    color: #11101d;
+    background-color: hsl(280, 18%, 38%);
+    border-radius: 5px;
+}
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar .link_name{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.principal.active .sidebar .link_name{
+    opacity: 1;
+    min-width: 120px;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+.sidebar .link{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0s ease;
+}
+.principal.active .sidebar .link{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 3s ease;
+}
+.sidebar .as{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.principal.active .sidebar .as{
+    opacity: 1;
+    margin-left: 30px;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+#date{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.principal.active .sidebar .logo #date{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+.sidebar .logo img{
+    height: 35px;
+    min-width: 35px;
+    line-height: 50px;
+    line-height: 50px;
+    margin-left: 6.5px;
+}
+.sidebar .logo a :hover{
+    cursor: pointer;
+}
+.principal.active .sidebar .logo a{
+    position: relative;
+    top: 0px;
+}
+
+.sidebar ul li .tooltip{
+    position: absolute;
+    height: 35px;
+    width: 122px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px black;
+    left: 122px;
+    top: 0;
+    transform: translate(-50% , -50%);
+    border-radius: 6px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0s;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+}
+.principal.active .sidebar ul li .tooltip{
+    display: none;
+}
+.sidebar ul li:hover .tooltip{
+    top: 50%;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.D{
+    margin-left: 82px;
+    transition: all 0.5s ease;
+    background-color: #fff;
+    height: 110px;
+    font-size: 20px;
+    padding: 10px;
+}
+.principal.active .D{
+    margin-left: 239.16px;
+}
+.D span{
+    margin-left: 350px;
+    transition: all 0.5s ease;
+}
+.principal.active .D span{
+    margin-left: 325px;
+    transition: all 0.5s ease;
+}
+.D i{
+    margin-left: 39px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.D hr{
+    margin-top: 22px;
+}
+.D div{
+    margin-top: 10px;
+    margin-left: 350px;
+    transition: all 0.5s ease;
+}
+.principal.active .D div{
+    margin-left: 260px;
+    transition: all 0.5s ease;
+}
+.D div #ouvert{
+    background-color: hsl(280, 18%, 38%);
+}
+.D div i{
+    border-radius: 50%;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+}
+#info{
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: hsl(280, 18%, 38%);
+}
+.D #btn{
+    cursor: pointer;
+    transition: all 0s ease;
+}
+.D #btn2{
+    visibility: hidden;
+    transition: all 0s ease;
+}
+.principal.active #btn{
+    visibility: hidden;
+    margin-left: -30px;
+    transition: all 0s ease;
+}
+.principal.active #btn2{
+    visibility: visible;
+    cursor: pointer;
+    transition: all 0s ease;
+}
+
+.corps{
+    margin-left: 100px;
+}
+select{
+    border: 1px solid #91c1eb;
+    width: 385px;
+    height: 33px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 130px;
+    transition: all 0.5s ease;
+}
+.principal.active select{
+    margin-left: 287px;
+    transition: all 0.5s ease;
+}
+label{
+    font-size: 25px;
+    line-height: 40px;
+    margin-left: 120px;
+    transition: all 0.5s ease;
+}
+.principal.active label{
+    margin-left: 277px;
+    transition: all 0.5s ease;
+} 
+input{
+    border: 1px solid #91c1eb;
+    width: 385px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 130px;
+    transition: all 0.5s ease;
+}
+input[type="file"]{
+    background-color: #fff;
+    cursor: pointer;
+}
+.principal.active input{
+    margin-left: 287px;
+    transition: all 0.5s ease;
+}
+.corps a{
+    border: 1px solid #91c1eb;
+    border-radius: 5px;
+    background-color: hsl(280, 18%, 38%);
+    color: white;
+    cursor: pointer;
+    font-size: 100%;
+    text-decoration: none;
+    padding: 4.5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 10px;
+}
+button{
+    border: 1px solid #91c1eb;
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 130px;
+    background-color: hsl(280, 18%, 38%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.principal.active button{
+    margin-left: 287px;
+    transition: all 0.5s ease;
+}
+label span{
+    color: red;
+}
+
+footer{
+    transition: all 0.5s ease;
+    bottom: 0;
+    padding-top: 0.5%;
+    width: 95%;
+    height: 10%;
+    margin-left: 83px;
+    background-color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+.principal.active footer{
+    width: 82.5%;
+    transition: all 0.5s ease;
+    margin-left: 238px;
+}
+
+small{
+    position: absolute;
+    color: red;
+    margin-left: 500px;
+    font-style: italic;
+    font-size: 15px;
+    visibility: hidden;
+}
+#s{
+    margin-left: 100px;
+}

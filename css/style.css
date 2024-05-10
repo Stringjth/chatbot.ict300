@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ddebf8;
+}
+hr{
+    color: hwb(0 56% 43%);
+}
+
+.sidebar{
+    height: 100%;
+    width: 81px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 6px 14px;
+    background: #ffffff;
+    transition: all 0.5s ease;
+    box-shadow: 3px 3px 3px rgb(185, 184, 184);
+}
+.principal.active .sidebar{
+    width: 238px;
+}
+.logo i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar .logo{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.principal.active .sidebar.logo{
+    opacity: inherit;
+    pointer-events: none;
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin: 0 5px;
+    line-height: 50px;
+}
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+    color: rgb(62, 12, 109);
+}
+.sidebar ul li a :hover{
+    color: #11101d;
+    background-color: hsl(280, 18%, 38%);
+    border-radius: 5px;
+}
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar .link_name{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.principal.active .sidebar .link_name{
+    opacity: 1;
+    min-width: 120px;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+.sidebar .link{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0s ease;
+}
+.principal.active .sidebar .link{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 3s ease;
+}
+.sidebar .as{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.principal.active .sidebar .as{
+    opacity: 1;
+    margin-left: 30px;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+#date{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.principal.active .sidebar .logo #date{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+.sidebar .logo img{
+    height: 35px;
+    min-width: 35px;
+    line-height: 50px;
+    line-height: 50px;
+    margin-left: 6.5px;
+}
+
+.sidebar ul li .tooltip{
+    position: absolute;
+    height: 35px;
+    width: 122px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px black;
+    left: 122px;
+    top: 0;
+    transform: translate(-50% , -50%);
+    border-radius: 6px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0s;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+}
+.principal.active .sidebar ul li .tooltip{
+    display: none;
+}
+.sidebar ul li:hover .tooltip{
+    top: 50%;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.D{
+    margin-left: 82px;
+    transition: all 0.5s ease;
+    background-color: #fff;
+    height: 56px;
+    padding-top: 13.7px;
+    font-size: 20px;
+    width: 100%;
+}
+.principal.active .D{
+    margin-left: 239.16px;
+}
+.D span{
+    margin-left: 102.33px;
+}
+.D #btn{
+    cursor: pointer;
+}
+.D #btn2{
+    visibility: hidden;
+}
+.principal.active #btn{
+    visibility: hidden;
+}
+.principal.active #btn2{
+    visibility: visible;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.D1{
+    width: 94%;
+    margin-left: 137px;
+    display: flex;
+    transition: all 0.5s ease;
+    margin-top: 2%;
+}
+.principal.active .D1{
+    margin-left: 17.5%;
+}
+.D3{
+    width: 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.principal.active .D3{
+    width: 45%;
+}
+.D a{
+    margin-left: 30%;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: black;
+}
+.principal.active .D a{
+    margin-left: 16%;
+    transition: all 0.5s ease;
+}
+.D2{
+    border-radius: 5px;
+    width: 40%;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgb(185, 184, 184);
+    border-top: 3px solid green;
+}
+.D2 div{
+    padding: 3%;
+}
+.principal.active .D2{
+    width: 40%;
+    margin-left: 1%;
+}
+.D4{
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(185, 184, 184);
+    text-align: center;
+    background-color: #fff;
+    padding: 4%;
+    margin-bottom: 3%;
+    border-left: 3px solid green;
+}
+.D4 a{
+    border: 1px solid #6a4e77;
+    background-color: #6a4e77;
+    color: #fff;
+    padding: 2%;
+    border-radius: 5px;
+}
+.D5{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 4%;
+    margin-bottom: 3%;
+    box-shadow: 3px 3px 3px rgb(185, 184, 184);
+    border-left: 3px solid red;
+}
+.D6{
+    border-radius: 5px;
+    padding: 4%;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgb(185, 184, 184);
+    border-left: 3px solid yellow;
+}
+.principal.active .D6{
+    height: 39.5%;
+}
+.D2 img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-left: 35%;
+}
+h3{
+    text-align: center;
+}
+.D2 .P1 {
+    text-align: center;
+}
+.D5 span{
+    font-weight: bold;
+}
+.D6 span{
+    font-weight: bold;
+}
+.P2{
+    line-height: 150%;
+}
+.file{
+    background-color: hsl(0, 1%, 83%);
+}
+
+footer{
+    transition: all 0.5s ease;
+    position: fixed;
+    bottom: 0;
+    padding-top: 0.5%;
+    width: 100%;
+    background-color: white;
+    height: 8%;
+    text-align: center;
+}
+.principal.active footer{
+    width: 82.5%;
+    transition: all 0.5s ease;
+    margin-left: 238px;
+}
+/*@media screen and (max-width:820px){
+    #btn{
+        margin-left: 300px;
+        visibility: visible;
+    }
+    .principal.active #btn2{
+        margin-left: 85px;
+    }
+    .D1{
+        flex-direction: column;
+        width: 75%;
+        margin-left: 207px;
+        transition: all 0.5s ease;
+    }
+    .principal.active .D1{
+        margin-left: 210px;
+        width: 70%;
+        transition: all 0.5s ease;
+    }
+    .D2{
+        margin-bottom: 4%;
+        width: 98%;
+    }
+    .principal.active .D2{
+        width: 98%;
+        margin-left: 1%;
+    }
+    .D2 img{
+        margin-left: 11vh;
+    }
+    .D3{
+        width: 98%;
+        margin-bottom: 4%;
+        margin-left: 0%;
+    }
+    .D3 div{
+        width: 100%;
+    }
+    .D4{
+        margin-bottom: 4%;
+    }
+    .D5{
+        margin-bottom: 4%;
+    }
+    .D6{
+        margin-bottom: 4%;
+    }
+    .principal.active .D3{
+        width: 98%;
+    }
+    .D{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .D span{
+        font-size: 20px;
+        margin-left: 17%;
+    }
+    .principal.active .D{
+        position: fixed;
+    }
+    .D i{
+        text-align: center;
+    }
+    .sidebar{
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 6px 14px;
+        background: #ffffff;
+        box-shadow: 3px 3px 3px rgb(185, 184, 184);
+    }
+    .principal.active .sidebar{
+        visibility: visible;
+        width: 200px;
+    }
+    #date{
+        opacity: 1;
+    }
+    .principal.active .sidebar .logo #date{
+        opacity: 1;
+    }
+    .sidebar .as{
+        opacity: 1;
+        margin-left: 30px;
+    }
+    .principal.active .sidebar .as{
+        opacity: 1;
+        margin-left: 30px;
+    }
+    .sidebar .link_name{
+        opacity: 1;
+    }
+    .principal.active .sidebar .link_name{
+        opacity: 1;
+    }
+    .sidebar .link{
+        opacity: 1;
+        pointer-events: none;
+        transition: all 0s ease;
+    }
+    .principal.active .sidebar .link{
+        opacity: 1;
+        pointer-events: auto;
+        transition: all 3s ease;
+    }
+    body .principal{
+        overflow: hidden;
+    }
+    footer{
+        position: relative;
+        width: 75%;
+        margin-left: 201px;
+        height: 102px;
+    }
+}*/
+
+@media screen and (max-width:660px){
+    #btn{
+        margin-left: 300px;
+        transition: all 0.5 ease;
+    }
+    .principal.active #btn2{
+        margin-left: 85px;
+        transition: all 0.5s ease;
+    }
+    .D1{
+        flex-direction: column;
+        margin-left: 2.5%;
+        width: 96%;
+    }
+    .principal.active .D1{
+        margin-left: 2.5%;
+        margin-top: 17.5%;
+        width: 96%;
+    }
+    .D2{
+        margin-bottom: 3%;
+        width: 98%;
+    }
+    .principal.active .D2{
+        width: 98%;
+        margin-left: 1%;
+    }
+    .D2 img{
+        margin-left: 11vh;
+    }
+    .D3{
+        width: 98%;
+        margin-bottom: 3%;
+        margin-left: 0%;
+    }
+    .D3 div{
+        width: 100%;
+    }
+    .principal.active .D3{
+        width: 98%;
+    }
+    .D{
+        margin-left: 0%;
+    }
+    .D span{
+        font-size: 1px;
+        visibility: hidden;
+    }
+    .D #btn{
+        visibility: visible;
+    }
+    .principal.active .D{
+        position: fixed;
+    }
+    .D i{
+        text-align: center;
+    }
+    .sidebar{
+        visibility: hidden;
+        transition: all 0s ease;
+    }
+    .principal.active .sidebar{
+        visibility: visible;
+        transition: all 0.5s ease;
+    }
+    body .principal.active{
+        overflow: hidden;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        margin-left: 0px;
+        height: 8%;
+    }
+    .principal.active footer{
+        opacity: 0;
+    }
+}

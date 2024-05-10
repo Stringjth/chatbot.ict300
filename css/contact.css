@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ddebf8;
+}
+hr{
+    color: hwb(0 56% 43%);
+}
+
+.sidebar{
+    height: 100%;
+    width: 81px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 6px 14px;
+    background: #ffffff;
+    transition: all 0.5s ease;
+    box-shadow: 3px 3px 3px rgb(185, 184, 184);
+}
+.principal.active .sidebar{
+    width: 238px;
+}
+.logo i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar .logo{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.principal.active .sidebar.logo{
+    opacity: inherit;
+    pointer-events: none;
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin: 0 5px;
+    line-height: 50px;
+}
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+    color: rgb(62, 12, 109);
+}
+.sidebar ul li a :hover{
+    color: #11101d;
+    background-color: hsl(280, 18%, 38%);
+    border-radius: 5px;
+}
+.sidebar ul li i{
+    height: 50px;
+    min-width: 50px;
+    line-height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.sidebar .link_name{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.principal.active .sidebar .link_name{
+    opacity: 1;
+    min-width: 120px;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+.sidebar .link{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0s ease;
+}
+.principal.active .sidebar .link{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 3s ease;
+}
+.sidebar .as{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.principal.active .sidebar .as{
+    opacity: 1;
+    margin-left: 30px;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+#date{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.principal.active .sidebar .logo #date{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+.sidebar .logo img{
+    height: 35px;
+    min-width: 35px;
+    line-height: 50px;
+    line-height: 50px;
+    margin-left: 6.5px;
+}
+
+.D{
+    margin-left: 82px;
+    transition: all 0.5s ease;
+    background-color: #fff;
+    height: 56px;
+    padding-top: 13.7px;
+    font-size: 20px;
+}
+.principal.active .D{
+    margin-left: 239.16px;
+}
+.D span{
+    margin-left: 102.33px;
+}
+.D i{
+    margin-left: 39px;
+    cursor: pointer;
+}
+
+.grand{
+    margin-left: 130px;
+    transition: all 0.5s ease;
+    display: grid;
+    grid-template: 4em;
+    padding: 50px;
+    font-size: 20px;
+}
+.principal.active .grand{
+    margin-left: 250px;
+}
+.tete{
+    font-size: 35px;
+}
+
+.deb{
+    border-bottom: 1px solid #000;
+}
+
+.bas{
+    display: flex;
+}
+select{
+    background-color: #ddebf8;
+}
+.gauche{
+    width: 50%;
+    display: grid;
+    grid-template: 1em;
+    box-shadow: 3px 3px 3px rgb(185, 184, 184);
+    border-radius: 5px;
+    padding: 4%;
+    background-color: #fff;
+    position: relative;
+}
+
+.droite{
+    box-shadow: 3px 3px 3px rgb(185, 184, 184);
+    border-radius: 5px;
+    padding: 4%;
+    display: grid;
+    background-color: #fff;
+    grid-template: 2em;
+    margin-left: 60px;
+}
+.droite ul{
+    list-style: none;
+}
+.droite div{
+    margin-bottom: 25px;
+}
+
+.ok{
+    display: flex;
+}
+.ok2{
+    display: grid;
+    grid-template: 1em;
+}
+.ok2 input[type="text"]{
+    width: 100%;
+}
+input{
+    margin-right: 5px;
+    background-color: #ddebf8;
+    border: 0.5px solid #aaa;
+    height: 25px;
+}
+
+p{
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+button{
+    background-color: #00f;
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
